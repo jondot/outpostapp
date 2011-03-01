@@ -1,0 +1,6 @@
+<% content_for :upper_functions do %>
+  <%= link_to "Back to '#{@outpost.nid}'", outpost_path(@outpost) %>
+<% end %>
+
+<%= render :partial=>'form', :locals => { :edit_item => true } %>
+

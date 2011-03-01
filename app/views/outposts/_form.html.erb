@@ -1,0 +1,29 @@
+<%= form_for(@outpost) do |f| %>
+<article>
+  <% if @outpost.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@outpost.errors.count, "error") %> prohibited this outpost from being saved:</h2>
+
+      <ul>
+      <% @outpost.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>  
+  
+  <h1><%= f.text_field :nid, :style=>'width:7em'  %>  <span class="outpost-location">/<%= f.text_field :base_location, :style=>'width:15em' %></span></h1>
+  <p>
+    <div>Upload limit <%= f.text_field :size_limit, :style=>'width: 12em' %>kb</div>
+    <div><%= f.check_box :notification %> Notifications</div>
+    <div>Rolls every <%= f.text_field :rolling, :style=>'width: 12em'  %> hours</div>
+  </p>  
+  
+  <div class="actions">
+    <%= f.submit %> 
+    or 
+    <a href="<%= edit_item  ? (outpost_path @outpost) : outposts_path %>">cancel</a>
+    
+  </div>
+</article>
+<% end %>

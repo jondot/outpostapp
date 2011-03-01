@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Outpost</title>
+  <%= stylesheet_link_tag 'reset','screen' %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+<div class="container">
+  <p id="notice"><%= notice %></p>
+  <nav>
+    <%= link_to 'Register', :new_user_registration unless current_user %>       
+    <%= yield :upper_functions %>
+    <%= link_to 'Sign out', :destroy_user_session if current_user %> 
+  </nav>
+
+  <%= yield %> 
+  
+</div>
+</body>
+</html>

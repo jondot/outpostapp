@@ -1,0 +1,10 @@
+<% content_for :upper_functions do %>
+  <%= link_to "Back to '#{@outpost.nid}'", outpost_path(@outpost) %>
+<% end %>
+
+<%= render @outpost %>
+<div class="details">
+<% @locations.each do |location| %>
+  <%= render location %>
+<% end %>
+</div>

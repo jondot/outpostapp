@@ -1,0 +1,509 @@
+@charset "UTF-8";
+/* Reset --------------------------------------------------------------*/
+/* line 14, d:/ruby/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 17, d:/ruby/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+/* line 19, d:/ruby/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 21, d:/ruby/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 23, d:/ruby/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 25, d:/ruby/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: "" "";
+}
+/* line 96, d:/ruby/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+/* line 27, d:/ruby/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* HTML5 Reset --------------------------------------------------------------*/
+/* line 108, d:/ruby/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  display: block;
+}
+
+/* Typography -------------------------------------------------------------- */
+/* The following classes are for use with @extend. */
+/* line 16, ../src/_defaults.scss */
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 20, ../src/_defaults.scss */
+.serif {
+  font-family: Cambria, Georgia, serif;
+}
+
+/* line 23, ../src/_defaults.scss */
+.sans, body {
+  font-family: Arial, sans-serif;
+}
+
+/* line 26, ../src/_defaults.scss */
+.mono, pre, code, tt {
+  font-family: "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, Courier, monospace, sans-serif;
+}
+
+/* line 29, ../src/_defaults.scss */
+.caps, .allcaps, caption, .smallcaps, h4 {
+  letter-spacing: 0.1em;
+}
+
+/* line 32, ../src/_defaults.scss */
+.allcaps, caption {
+  text-transform: uppercase;
+}
+
+/* line 36, ../src/_defaults.scss */
+.smallcaps, h4 {
+  font-variant: small-caps;
+}
+
+/* Body -------------------------------------------------------------- */
+/* line 42, ../src/_defaults.scss */
+body {
+  color: #4c4c4c;
+}
+
+/* Selected Text -------------------------------------------------------------- */
+/* -moz- must be declared separately */
+/* line 55, ../src/_defaults.scss */
+::-moz-selection {
+  color: white;
+  background: #005498;
+  text-shadow: none;
+}
+
+/* line 60, ../src/_defaults.scss */
+::selection {
+  color: white;
+  background: #005498;
+  text-shadow: none;
+}
+
+/* Links -------------------------------------------------------------- */
+/* line 68, ../src/_defaults.scss */
+a:link, a:visited {
+  color: #0033cc;
+}
+/* line 70, ../src/_defaults.scss */
+a:link, a:visited, a:hover, a:active {
+  outline: none;
+}
+/* line 72, ../src/_defaults.scss */
+a:focus, a:hover, a:active {
+  text-decoration: none;
+}
+/* line 74, ../src/_defaults.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* Headings -------------------------------------------------------------- */
+/* line 79, ../src/_defaults.scss */
+h2, h3, h4, h5, h6 {
+  margin-bottom: 1.5em;
+}
+
+/* line 82, ../src/_defaults.scss */
+h1 {
+  font-size: 2em;
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+/* line 86, ../src/_defaults.scss */
+h1 span {
+  color: #aaaaaa;
+}
+/* line 89, ../src/_defaults.scss */
+h1 a:link, h1 a:visited {
+  color: #333333;
+  text-decoration: none;
+}
+/* line 90, ../src/_defaults.scss */
+h1 a:focus {
+  outline: none;
+}
+
+/* line 94, ../src/_defaults.scss */
+h3 {
+  font-weight: bold;
+}
+
+/* line 97, ../src/_defaults.scss */
+h4 {
+  text-transform: lowercase;
+}
+
+/* line 101, ../src/_defaults.scss */
+h5, h6 {
+  font-style: italic;
+}
+
+/* Inline -------------------------------------------------------------- */
+/* line 106, ../src/_defaults.scss */
+cite, em, dfn, address, i {
+  font-style: italic;
+}
+
+/* line 109, ../src/_defaults.scss */
+strong, dfn, b {
+  font-weight: bold;
+}
+
+/* line 112, ../src/_defaults.scss */
+sup, sub {
+  font-size: smaller;
+  line-height: 0;
+}
+
+/* line 116, ../src/_defaults.scss */
+sup {
+  vertical-align: super;
+}
+
+/* line 119, ../src/_defaults.scss */
+sub {
+  vertical-align: sub;
+}
+
+/* line 122, ../src/_defaults.scss */
+abbr, acronym {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* line 126, ../src/_defaults.scss */
+ins {
+  text-decoration: underline;
+}
+
+/* line 129, ../src/_defaults.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 132, ../src/_defaults.scss */
+mark {
+  background: #ffff99;
+  background-color: rgba(255, 255, 0, 0.5);
+  text-shadow: none;
+}
+
+/* line 137, ../src/_defaults.scss */
+small {
+  font-size: 0.857em;
+  line-height: 1.75em;
+}
+
+/* line 140, ../src/_defaults.scss */
+q {
+  font-style: italic;
+}
+/* line 142, ../src/_defaults.scss */
+q em {
+  font-style: normal;
+}
+
+/* Block -------------------------------------------------------------- */
+/* line 150, ../src/_defaults.scss */
+p {
+  margin-bottom: 1.5em;
+}
+
+/* line 153, ../src/_defaults.scss */
+pre {
+  margin: 1.5em;
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+
+/* line 160, ../src/_defaults.scss */
+blockquote {
+  margin: 1.5em;
+  font-style: italic;
+}
+
+/* Replaced -------------------------------------------------------------- */
+/* line 166, ../src/_defaults.scss */
+img {
+  vertical-align: text-bottom;
+  max-width: 100%;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* Lists -------------------------------------------------------------- */
+/* line 173, ../src/_defaults.scss */
+ol, ul, dl {
+  margin-bottom: 1.5em;
+  margin-left: 1.5em;
+}
+
+/* line 177, ../src/_defaults.scss */
+ol {
+  list-style: decimal;
+}
+
+/* line 180, ../src/_defaults.scss */
+ul {
+  list-style: disc;
+}
+/* line 182, ../src/_defaults.scss */
+li ul {
+  list-style-type: circle;
+}
+
+/* line 185, ../src/_defaults.scss */
+dt {
+  margin-top: 1.5em;
+  font-style: italic;
+}
+
+/* line 189, ../src/_defaults.scss */
+dd {
+  padding-left: 1.5em;
+}
+
+/* Tables -------------------------------------------------------------- */
+/* tables still need 'cellspacing="0"' in the markup */
+/* line 195, ../src/_defaults.scss */
+table {
+  margin-bottom: 1.5em;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* line 201, ../src/_defaults.scss */
+table, td, th {
+  vertical-align: top;
+}
+
+/* line 204, ../src/_defaults.scss */
+th, thead th {
+  font-weight: bold;
+}
+
+/* line 207, ../src/_defaults.scss */
+th, td, caption {
+  padding: 0.75em;
+  text-align: left;
+  font-weight: normal;
+}
+
+/* line 212, ../src/_defaults.scss */
+table, th {
+  border-bottom-style: solid;
+  border-bottom-width: 0.071em;
+  padding-bottom: 0.679em;
+}
+
+/* line 215, ../src/_defaults.scss */
+tfoot {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+/* Forms -------------------------------------------------------------- */
+/* line 223, ../src/_defaults.scss */
+fieldset {
+  margin-bottom: 1.5em;
+  border-style: solid;
+  border-width: 0.071em;
+  padding: 1.429em;
+}
+
+/* line 227, ../src/_defaults.scss */
+legend {
+  font-size: 1.286em;
+  line-height: 1.167em;
+  font-weight: bold;
+}
+
+/* line 231, ../src/_defaults.scss */
+input[type="radio"], input[type="checkbox"] {
+  vertical-align: baseline;
+}
+
+/* line 234, ../src/_defaults.scss */
+label, input[type=button], input[type=submit], button {
+  cursor: pointer;
+}
+
+/* line 237, ../src/_defaults.scss */
+label {
+  font-weight: bold;
+}
+
+/* line 242, ../src/_defaults.scss */
+.textinput, textarea, input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=week], input[type=time], input[type=number], input[type=range], input[type=search], input[type=color] {
+  font-family: Arial, sans-serif;
+  font-size: 0.875em;
+  line-height: 1.5em;
+  border-style: solid;
+  border-width: 0.071em;
+  padding: 0.304em;
+  margin-bottom: 0.75em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 0;
+  border-color: #aaaaaa;
+  height: 2.25em;
+}
+
+/* line 253, ../src/_defaults.scss */
+textarea {
+  height: 9.75em;
+  vertical-align: text-bottom;
+}
+
+/* line 264, ../src/_defaults.scss */
+input[type=search] {
+  -webkit-appearance: none;
+}
+/* line 266, ../src/_defaults.scss */
+input[type=search]::-webkit-search-decoration {
+  display: none;
+}
+
+/* line 269, ../src/_defaults.scss */
+button {
+  width: auto;
+  overflow: visible;
+}
+
+/* Layout -------------------------------------------------------------- */
+/* line 29, d:/ruby/lib/ruby/gems/1.8/gems/compass-susy-plugin-0.8.1/sass/susy/././_vertical_rhythm.scss */
+body {
+  font-size: 87.5%;
+  line-height: 1.5em;
+}
+
+/* line 33, d:/ruby/lib/ruby/gems/1.8/gems/compass-susy-plugin-0.8.1/sass/susy/././_vertical_rhythm.scss */
+html > body {
+  font-size: 14px;
+}
+
+/* line 13, ../src/screen.scss */
+.container {
+  *zoom: 1;
+  margin-left: auto;
+  margin-right: auto;
+  width: 61em;
+  max-width: 100%;
+  background-image: url('/images/grid.png');
+  background-repeat: repeat;
+  background-position: 1em 0;
+}
+/* line 22, d:/ruby/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/* line 18, ../src/screen.scss */
+nav {
+  clear: both;
+  margin-right: 1.639%;
+  margin-left: 1.639%;
+  text-align: right;
+}
+
+/* line 23, ../src/screen.scss */
+article {
+  clear: both;
+  margin-right: 1.639%;
+  margin-left: 1.639%;
+  background: #f5f5f5;
+  border: 1px solid #eee;
+  padding: 0.928em 1.5em;
+  margin: 0 0 3em 0;
+}
+
+/* line 32, ../src/screen.scss */
+.details article {
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+/* line 37, ../src/screen.scss */
+.details article h3 {
+  margin-bottom: 0;
+}
+/* line 39, ../src/screen.scss */
+.details article .footer {
+  margin-top: 1em;
+}
+/* line 43, ../src/screen.scss */
+.details article span {
+  color: #aaaaaa;
+}
+/* line 47, ../src/screen.scss */
+.details article > div {
+  background: #f5f5f5;
+  border: 1px solid #eee;
+  padding: 0.928em 1.5em;
+  margin: .5em 0;
+}
+
+/* Styles -------------------------------------------------------------- */

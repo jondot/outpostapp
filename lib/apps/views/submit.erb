@@ -1,0 +1,20 @@
+<html>
+  
+  <p>
+  Upload manually:
+  <form action="<%= params[:name] %>" enctype="multipart/form-data" method="post" >
+    <input type="file" multiple="multiple" class="absmid" name="data" size="43">
+    <input type="submit" value="Upload"/>
+  </form>
+  </p>
+  
+  <p>
+  Or via <code>curl</code>
+  <div>
+  <code>
+    $ curl -v -F "data=@/path/to/filename" http://localhost:4567/submit/<%= params[:name] %>
+  </code>
+  </div> 
+  
+  </p>
+</html>

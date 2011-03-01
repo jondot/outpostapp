@@ -1,0 +1,9 @@
+<% content_for :upper_functions do %>
+  <%= link_to 'New Outpost', new_outpost_path %>
+<% end %>
+
+<% @outposts.each do |outpost| %>
+  <%= render outpost  %>
+<% end %>
+
+

@@ -1,0 +1,8 @@
+<% content_for :upper_functions do %>
+  <%= link_to 'Back to outposts', outposts_path %>
+<% end %>
+
+<%= render @outpost %>
+<div class="details">
+  <%= render @outpost.location%>
+</div>

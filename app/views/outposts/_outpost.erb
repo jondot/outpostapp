@@ -1,0 +1,37 @@
+<article>
+  <h1>
+    <a href="<%= outpost_path(outpost) %>">
+      <%= outpost.nid %> <%= '(disabled)' if outpost.disabled %> <span>/<%= outpost.base_location %></span>
+    </a>
+  </h1>
+
+  <div class="settings">
+    <% if outpost.size_limit > 0 %>
+      <div>Upload limit <em><%= outpost.size_limit %></em>kb</div>
+    <% end %>
+      
+    <% if outpost.notification %>
+      <div>Notifications <em>enabled</em></div>
+    <% end %>
+        
+    <% if outpost.rolling > 0 %>
+      <div>Rolls every <em><%= outpost.rolling %></em> hours</div>
+    <% end %>
+  </div>
+  
+  <div class="props">
+    <% unless outpost.location.nil? %>
+      <%= outpost.location.uploads.count %> files uploaded 
+      <% if outpost.locations.count > 1 %>
+        and more in archive (from <a href="<%= outpost_locations_url(outpost) %>"><%= outpost.locations.count - 1%> other locations</a>)
+      <%end%>
+    <% end %>
+  </div>
+
+  <div class="links">    
+    <a href="/submit/<%= outpost.nid %>">Upload URL</a> |
+    <%= link_to 'Edit', edit_outpost_path(outpost) %> |
+    <%= link_to 'Delete', outpost, :confirm => 'Are you sure?', :method => :delete %> 
+  </div>
+</article>
+

@@ -1,0 +1,60 @@
+//** SCREEN STYLES **//
+
+// Imports --------------------------------------------------------------
+
+@import "defaults";
+
+/* Layout -------------------------------------------------------------- */
+
+@include susy;
+
+// change '.container' to match your HTML container element
+// or @extend it to apply multiple containers on your site.
+.container {
+  @include container;
+  @include show-grid("grid.png"); }
+
+  nav
+  {
+    @include full; 
+    
+    text-align:right;
+  }  
+  article { @include full;    
+    background: #f5f5f5;
+    border: 1px solid #eee;
+    padding: 0.928em 1.5em;
+    margin: 0 0 3em 0;}
+  
+  .details  
+  {
+    article
+    {
+        background: none;
+        border: 0;
+        padding: 0;
+        margin:0;
+        h3{ margin-bottom:0;}
+        .footer
+        {
+          margin-top:1em;
+        }
+        span
+        {
+          color: $gray_mid;
+        }
+        > div
+        {
+          background: #f5f5f5;
+          border: 1px solid #eee;
+          padding: 0.928em 1.5em;
+          margin:.5em 0;
+        }
+    }
+  }
+// show-grid loads a 64+16x24 grid image by default
+// For other grid settings, run `compass grid-img 30+10x20`
+// Where 30 is the column width, 10 is the gutter width,
+// and 20 is the (optional) line-height.
+
+/* Styles -------------------------------------------------------------- */
