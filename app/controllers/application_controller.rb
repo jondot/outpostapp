@@ -11,6 +11,6 @@ protected
     unauthorized! if @outpost.user != current_user
   end
   def unauthorized!
-    redirect_to :unauthorized
+    redirect_to :root
   end  
 end

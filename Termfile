@@ -1,0 +1,14 @@
+window :name=>'rails:9292', :bounds=>[80,20] do
+  run 'pik use ruby 187'
+  run 'rails s -p 9292'
+end
+
+window :name=>'compass', :bounds=>[80,20] do
+  run 'pik use ruby 187'
+  run 'cd public'
+  run 'compass watch'
+end
+
+run 'pik use ruby 192'
+run 'gvim'
+

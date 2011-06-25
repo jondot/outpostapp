@@ -5,26 +5,38 @@
 @import "defaults";
 
 /* Layout -------------------------------------------------------------- */
-
-@include susy;
+ 
 
 // change '.container' to match your HTML container element
 // or @extend it to apply multiple containers on your site.
 .container {
   @include container;
-  @include show-grid("grid.png"); }
+  @include text-shadow(#fff 0px 1px 1px);
+  }
 
   nav
   {
-    @include full; 
-    
+    @include columns(10); 
+    font-size:13px;
+    margin-bottom:1em;
+  }
+  nav.user{
+    @include columns(2); 
+    @include omega;
+    font-size:13px;
+    margin-bottom:1em;
     text-align:right;
-  }  
-  article { @include full;    
-    background: #f5f5f5;
-    border: 1px solid #eee;
+  }
+  article { 
+    @include full;    
+    @include border-radius(6px);
+    background: #fff;
+    border: 1px solid #ccc;
+    border-top-color: #E1E1E1;
+    border-bottom-color: #BBB;
     padding: 0.928em 1.5em;
-    margin: 0 0 3em 0;}
+    margin: 0 0 3em 0;
+  }
   
   .details  
   {
@@ -45,13 +57,59 @@
         }
         > div
         {
-          background: #f5f5f5;
-          border: 1px solid #eee;
+          @include border-radius(6px);
+          background: #fff;
+          border: 1px solid #ccc;
+          border-top-color: #E1E1E1;
+          border-bottom-color: #BBB;
           padding: 0.928em 1.5em;
           margin:.5em 0;
         }
     }
   }
+  .smaller {
+    font-size:.4em;   
+  }
+  .checksum { color:$gray_mid;}
+  .outpost-options div label {
+    font-weight:normal;  
+  }
+  .actions{
+    margin-top:3em;
+  }
+  input[type=text] { 
+    @include border-radius(3px);
+  }
+
+#wrap{
+  background:#000;
+  color:#fff;
+  height:38px;
+  line-height:38px;
+  background: url(/images/wrapbg.gif);
+  border-bottom:1px solid #B6BAC0;
+  img {
+    margin-bottom:-3px;
+  }
+  a{
+    color:#888;
+    margin-right:1.5em;
+  }
+  a:hover{
+    text-decoration:none;
+    color:#444;
+  }
+}
+h2{
+  font-size:2em;
+}
+label{
+  font-weight:normal;
+
+}
+#user_new{
+  width:470px;
+}
 // show-grid loads a 64+16x24 grid image by default
 // For other grid settings, run `compass grid-img 30+10x20`
 // Where 30 is the column width, 10 is the gutter width,

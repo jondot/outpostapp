@@ -9,7 +9,7 @@ class UploaderApp < Sinatra::Application
   end
 
   post '/:name' do
-    op = Outpost.find_by_nid(params[:name])
+    op = Outpost.find_by_uuid(params[:name])
     halt 404 if op.nil?
     
     datafile = params[:data]

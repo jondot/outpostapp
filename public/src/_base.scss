@@ -17,20 +17,20 @@ $gutter-width: 1em;
 $side-gutter-width: $gutter-width;
 
 // Don't move this @import above the GRID and FONT-SIZE variables.
-@import "susy/susy";
-
+@import "susy";
+@import "compass";
 // Colors --------------------------------------------------------------
 
 $base: #4c4c4c;
 $alt: #005498;
-$c_link:#0033CC;
+$c_link:#4E92E1;
 $c_dark_link: #333;
-$gray_mid: #aaa;
+$gray_mid: #888;
 
 // Fonts --------------------------------------------------------------
 
 @mixin sans-family {
-  font-family: Arial, sans-serif;
+  font-family: 'Helvetica Neue', helvetica, Arial, sans-serif;
 }
 
 @mixin serif-family {

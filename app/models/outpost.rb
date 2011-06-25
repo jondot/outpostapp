@@ -1,8 +1,11 @@
+require 'simple_uuid'
+include SimpleUUID
+
 class Outpost < ActiveRecord::Base
   has_many :locations, :order=>'created_at DESC'
   belongs_to :user
   validates_presence_of :nid, :base_location
-  validates_uniqueness_of :nid
+  validates_uniqueness_of :uuid
   validates_format_of :base_location, :with=>/^[a-zA-Z0-9_-]{1,128}$/
   after_initialize :defaults
 
@@ -51,6 +54,7 @@ private
   def defaults
     self.nid ||= uniq_id
     self.base_location ||= "uploads_#{nid}"
+    self.uuid ||= ::UUID.new.to_guid.gsub '-', ''
   end
 
   def uniq_id

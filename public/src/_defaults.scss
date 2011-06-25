@@ -8,7 +8,7 @@
 // Imports --------------------------------------------------------------
 
 @import "base";
-@import "susy/reset";
+@import "compass/reset";
 
 /* Typography -------------------------------------------------------------- */
 /* The following classes are for use with @extend. */
@@ -41,7 +41,8 @@ html {
 
 body {
   @extend .sans;
-  color: $base; }
+  color: $base; 
+  background:url(/images/bg.gif)}
 
 /* Selected Text -------------------------------------------------------------- */
 /* -moz- must be declared separately */
@@ -65,14 +66,21 @@ body {
 /* Links -------------------------------------------------------------- */
 
 a {
-  &:link, &:visited {
-    color: $c_link; }
-  &:link, &:visited, &:hover, &:active {
-    outline: none; }
-  &:focus, &:hover, &:active {
-    text-decoration: none; }
-  &:focus {
-    outline: thin dotted; } }
+    &:link, &:visited {
+      color: $c_link;
+      text-decoration:none;
+    }
+    &:link, &:visited, &:hover, &:active {
+      outline: none; 
+    }
+    &:focus, &:hover, &:active {
+      text-decoration: none;
+      text-decoration:underline;
+    }
+    &:focus {
+      outline: thin dotted; 
+    }
+}
 
 /* Headings -------------------------------------------------------------- */
 

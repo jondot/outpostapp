@@ -7,13 +7,21 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
+<div id="wrap">
+  <div class="container">
+    <nav>
+      <%= yield :upper_functions %>
+    </nav>
+    <nav class="user">
+      <%= link_to image_tag('reg.png') + ' Register', :new_user_registration unless current_user %>
+      <%= link_to image_tag('out.png') + ' Sign out', :destroy_user_session if current_user %> 
+    </nav>
+  </div>
+</div>
+
+
 <div class="container">
   <p id="notice"><%= notice %></p>
-  <nav>
-    <%= link_to 'Register', :new_user_registration unless current_user %>       
-    <%= yield :upper_functions %>
-    <%= link_to 'Sign out', :destroy_user_session if current_user %> 
-  </nav>
 
   <%= yield %> 
   

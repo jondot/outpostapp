@@ -2,11 +2,12 @@
 <span><%= location.path %></span>
 <% location.uploads.each do | u | %>
   <div>
-    <h3><a href="/download/<%= u.uuid %>"><%= u.file %></a></h3>
-    <div><%= u.checksum || 'Checksum pending' %></div>
+    <h3><a href="/download/<%= u.uuid %>"><%= u %></a></h3>
+    
     
     <div class="footer">
       <div class="at">Uploaded at <%= u.created_at %> (<%= time_ago_in_words u.created_at%> ago)</div>
+      <div class="checksum"><%= u.checksum || 'Checksum pending' %></div>
     </div>
   </div>
 <% end  %>

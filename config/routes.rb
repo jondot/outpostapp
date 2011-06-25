@@ -2,7 +2,6 @@ require 'apps/uploader'
 require 'apps/downloader'
 
 OutpostApp::Application.routes.draw do
-  resources :foos
 
   devise_for :users
 
@@ -17,7 +16,7 @@ OutpostApp::Application.routes.draw do
   mount DownloaderApp, :at  => '/download'
   
   root :to => "outposts#index"
-  
+ 
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

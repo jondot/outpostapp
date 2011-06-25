@@ -40,7 +40,7 @@ class OutpostsController < ApplicationController
   # POST /outposts
   # POST /outposts.xml
   def create
-    @outpost = Outpost.new(params[:outpost])
+    @outpost = current_user.outposts.build(params[:outpost])
     
     respond_to do |format|
       if @outpost.save
