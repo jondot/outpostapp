@@ -2,8 +2,11 @@ OutpostApp
 ==========
 
 OutpostApp is a simple file upload web application. It can be use for any of these purposes:
-- File upload service to use on your computer as a private inbox.
-- A public file upload service.
+
+* File upload service to use on your computer as a private inbox.
+* A public file upload service.
+
+It may have rough edges, but it did what it was designed for. Feel free to adopt and make it into a rapidshare-like platform. I'll welcome any pull requests.
 
 
 Quick Start
@@ -26,8 +29,8 @@ Features
 
 * Upload files, limit file sizes and types.
 * Automatic management/maintenance of uploads
-  - Define many Outposts
-  - Each Outpost holds several locations, where a location can be rolling i.e. after 24 hours
+  * Define many Outposts
+  * Each Outpost holds several locations, where a location can be rolling i.e. after 24 hours
     archive the current location and roll into a new one.
 * Automatic notifications (email).
 * Web frontend.
