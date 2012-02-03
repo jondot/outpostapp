@@ -37,8 +37,8 @@ Features
 
 Screenshots
 -----------
-![Outposts](https://github.com/jondot/outpost/raw/develop/doc/outpost1.jpg "Outposts")
-![Files in Outpost](https://github.com/jondot/outpost/raw/develop/doc/outpost2.jpg "Files in Outpost")
+![Outposts](https://github.com/jondot/outpostapp/raw/develop/doc/outpost1.jpg "Outposts")
+![Files in Outpost](https://github.com/jondot/outpostapp/raw/develop/doc/outpost2.jpg "Files in Outpost")
 
 
 Components
